@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="eclipselink-2.7.4">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../untitled/lib/eclipselink-2.7.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../untitled/lib/commonj.sdo-2.1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../untitled/lib/jakarta.persistence-2.2.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
