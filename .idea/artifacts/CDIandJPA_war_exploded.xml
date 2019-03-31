@@ -7,13 +7,6 @@
         <element id="directory" name="classes">
           <element id="module-output" name="CDIandJPA" />
         </element>
-        <element id="directory" name="lib">
-          <element id="library" level="project" name="JBoss Weld-2.0.3" />
-          <element id="library" level="project" name="JPA 2.0-2.0" />
-          <element id="library" level="project" name="gson-2.8.5" />
-          <element id="library" level="project" name="eclipselink-2.7.4" />
-          <element id="library" level="project" name="h2-1.4.196" />
-        </element>
       </element>
     </root>
   </artifact>

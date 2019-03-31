@@ -58,13 +58,22 @@ public class MyBean implements Serializable {
         weberEntity.setAnswers(map.get("1"));
         result = weberEntity.getAnswers();
 
-        em.persist(weberEntity);
+        EntityTransaction etx = em.getTransaction();
 
+        etx.begin();
+        WeberEntity entity = new WeberEntity();
+        entity.setNumber(15);
+        entity.setName("Bob");
+        entity.setAnswers("answers");
+        em.persist(entity);
+        WeberEntity we = em.find(WeberEntity.class, 3);
+        etx.commit();
+        result = we.getAnswers();
         return result;
     }
 
     public static void main(String[] args) {
-        Weber weber = new Weber();
+        WeberEntity weber = new WeberEntity();
         weber.setNumber(2);
         weber.setName("John");
         weber.setAnswers("ahahaha");
@@ -75,6 +84,7 @@ public class MyBean implements Serializable {
         EntityTransaction transaction = manager.getTransaction();
         transaction.begin();
         manager.persist(weber);
+        System.out.println(manager.find(WeberEntity.class, 2).getAnswers());
         transaction.commit();
     }
 }
